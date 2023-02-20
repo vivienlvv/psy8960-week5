@@ -24,7 +24,17 @@ ABclean_tbl = Bdata_tbl %>%
   bind_rows(Aclean_tbl, .id = "lab") %>% 
   select(-notes)
   
-  
+
+# Class discussion, demo, and notes;
+# Can use read_tsv() when the delim = "\t" in read_delim()
+# To preserve quotes, we will use argument quote = ""
+# Lubridate also gives posix types, just easier for us 
+# mutate(across()) can be used with "contains()" 
+# inner_join() is valid for this assignment too 
+# full_join() will be appropriate for longitudinal data when we expect missingness 
+# We can mutate multiple things inside mutate() or split them up 
+
+
 
   
   
