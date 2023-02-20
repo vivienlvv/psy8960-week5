@@ -33,9 +33,3 @@ ABclean_tbl = Bdata_tbl %>%
 # inner_join() is valid for this assignment too 
 # full_join() will be appropriate for longitudinal data when we expect missingness 
 # We can mutate multiple things inside mutate() or split them up 
-
-
-
-  
-  
-  
