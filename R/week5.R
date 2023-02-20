@@ -20,9 +20,9 @@ ABclean_tbl = Bdata_tbl %>%
   mutate(datadate = mdy_hms(datadate)) %>% 
   mutate(across(q1:q10, as.integer)) %>% 
   left_join(Bnotes_tbl, by = "parnum") %>% 
-  filter(is.na(notes)) %>% 
-  select(-notes) %>% 
-  bind_rows(Aclean_tbl, .id = "lab") # Double check
+  filter(is.na(notes)) %>%
+  bind_rows(Aclean_tbl, .id = "lab") %>% 
+  select(-notes)
   
   
 
